@@ -6,9 +6,14 @@
 //
 
 import SwiftUI
+import MapboxMaps
 
 @main
 struct RecklessApp: App {
+    
+//    init() {
+//    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

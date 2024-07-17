@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F58126A2C4871A2005FE96E /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 9F5812692C4871A2005FE96E /* MapboxMaps */; };
+		9F58126D2C487378005FE96E /* MapboxDirections in Frameworks */ = {isa = PBXBuildFile; productRef = 9F58126C2C487378005FE96E /* MapboxDirections */; };
+		9F58126F2C487378005FE96E /* mapbox-directions-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 9F58126E2C487378005FE96E /* mapbox-directions-swift */; };
 		9F633D8A2C405B65002411B8 /* RecklessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F633D892C405B65002411B8 /* RecklessApp.swift */; };
 		9F633D8C2C405B65002411B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F633D8B2C405B65002411B8 /* ContentView.swift */; };
 		9F633D8E2C405B66002411B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F633D8D2C405B66002411B8 /* Assets.xcassets */; };
 		9F633D912C405B66002411B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F633D902C405B66002411B8 /* Preview Assets.xcassets */; };
+		9F7F3F2C2C41757B00187615 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F3F2B2C41757B00187615 /* LocationManager.swift */; };
+		9F7F3F2E2C4224BF00187615 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F3F2D2C4224BF00187615 /* MapViewController.swift */; };
+		9F7F3F302C42287800187615 /* MapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F3F2F2C42287800187615 /* MapViewRepresentable.swift */; };
+		9F7F3F522C44730700187615 /* scene.gltf in Resources */ = {isa = PBXBuildFile; fileRef = 9F7F3F512C44730700187615 /* scene.gltf */; };
+		9F7F3F542C44737D00187615 /* scene.bin in Resources */ = {isa = PBXBuildFile; fileRef = 9F7F3F532C44737C00187615 /* scene.bin */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,12 @@
 		9F633D8B2C405B65002411B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9F633D8D2C405B66002411B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F633D902C405B66002411B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9F633D972C416265002411B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9F7F3F2B2C41757B00187615 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		9F7F3F2D2C4224BF00187615 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9F7F3F2F2C42287800187615 /* MapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewRepresentable.swift; sourceTree = "<group>"; };
+		9F7F3F512C44730700187615 /* scene.gltf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scene.gltf; sourceTree = "<group>"; };
+		9F7F3F532C44737C00187615 /* scene.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = scene.bin; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F58126A2C4871A2005FE96E /* MapboxMaps in Frameworks */,
+				9F58126D2C487378005FE96E /* MapboxDirections in Frameworks */,
+				9F58126F2C487378005FE96E /* mapbox-directions-swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F4E5E682C4865DF00EBBFE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9F633D7D2C405B65002411B8 = {
 			isa = PBXGroup;
 			children = (
 				9F633D882C405B65002411B8 /* Reckless */,
 				9F633D872C405B65002411B8 /* Products */,
+				9F4E5E682C4865DF00EBBFE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,9 +76,15 @@
 		9F633D882C405B65002411B8 /* Reckless */ = {
 			isa = PBXGroup;
 			children = (
+				9F633D972C416265002411B8 /* Info.plist */,
 				9F633D892C405B65002411B8 /* RecklessApp.swift */,
 				9F633D8B2C405B65002411B8 /* ContentView.swift */,
+				9F7F3F2B2C41757B00187615 /* LocationManager.swift */,
+				9F7F3F2D2C4224BF00187615 /* MapViewController.swift */,
+				9F7F3F2F2C42287800187615 /* MapViewRepresentable.swift */,
 				9F633D8D2C405B66002411B8 /* Assets.xcassets */,
+				9F7F3F532C44737C00187615 /* scene.bin */,
+				9F7F3F512C44730700187615 /* scene.gltf */,
 				9F633D8F2C405B66002411B8 /* Preview Content */,
 			);
 			path = Reckless;
@@ -83,6 +114,11 @@
 			dependencies = (
 			);
 			name = Reckless;
+			packageProductDependencies = (
+				9F5812692C4871A2005FE96E /* MapboxMaps */,
+				9F58126C2C487378005FE96E /* MapboxDirections */,
+				9F58126E2C487378005FE96E /* mapbox-directions-swift */,
+			);
 			productName = Reckless;
 			productReference = 9F633D862C405B65002411B8 /* Reckless.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +147,10 @@
 				Base,
 			);
 			mainGroup = 9F633D7D2C405B65002411B8;
+			packageReferences = (
+				9F5812682C4871A2005FE96E /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+				9F58126B2C487378005FE96E /* XCRemoteSwiftPackageReference "mapbox-directions-swift" */,
+			);
 			productRefGroup = 9F633D872C405B65002411B8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,7 +165,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7F3F542C44737D00187615 /* scene.bin in Resources */,
 				9F633D912C405B66002411B8 /* Preview Assets.xcassets in Resources */,
+				9F7F3F522C44730700187615 /* scene.gltf in Resources */,
 				9F633D8E2C405B66002411B8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7F3F302C42287800187615 /* MapViewRepresentable.swift in Sources */,
 				9F633D8C2C405B65002411B8 /* ContentView.swift in Sources */,
 				9F633D8A2C405B65002411B8 /* RecklessApp.swift in Sources */,
+				9F7F3F2C2C41757B00187615 /* LocationManager.swift in Sources */,
+				9F7F3F2E2C4224BF00187615 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,12 +319,18 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Reckless/Preview Content\"";
 				DEVELOPMENT_TEAM = D9DSWYW272;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Reckless/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Necesitamos tu localización.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your precise location is used to calculate turn-by-turn directions, show your location on the map, and help improve the map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +338,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = FacundoKzemin.Reckless;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,12 +358,18 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Reckless/Preview Content\"";
 				DEVELOPMENT_TEAM = D9DSWYW272;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Reckless/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Necesitamos tu localización.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your precise location is used to calculate turn-by-turn directions, show your location on the map, and help improve the map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +377,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = FacundoKzemin.Reckless;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -344,6 +409,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9F5812682C4871A2005FE96E /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 11.5.1;
+			};
+		};
+		9F58126B2C487378005FE96E /* XCRemoteSwiftPackageReference "mapbox-directions-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-directions-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9F5812692C4871A2005FE96E /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F5812682C4871A2005FE96E /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+		9F58126C2C487378005FE96E /* MapboxDirections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F58126B2C487378005FE96E /* XCRemoteSwiftPackageReference "mapbox-directions-swift" */;
+			productName = MapboxDirections;
+		};
+		9F58126E2C487378005FE96E /* mapbox-directions-swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F58126B2C487378005FE96E /* XCRemoteSwiftPackageReference "mapbox-directions-swift" */;
+			productName = "mapbox-directions-swift";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9F633D7E2C405B65002411B8 /* Project object */;
 }
