@@ -34,7 +34,7 @@ struct MapViewRepresentable: UIViewControllerRepresentable {
             self.parent = parent
         }
         
-        func centerOnUserLocation() {
+        @MainActor func centerOnUserLocation() {
             mapViewController?.centerAndFollowUser()
         }
     }

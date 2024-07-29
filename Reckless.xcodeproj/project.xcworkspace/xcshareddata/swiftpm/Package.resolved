@@ -1,5 +1,5 @@
 {
-  "originHash" : "3a88b801789bdebe832a3bc00fc25bff08077857a0a957c14d3bbed5501ae620",
+  "originHash" : "705d163b7c056242a7fc836d696134333ea96a411536a32a8cc7891d8c9b4d5e",
   "pins" : [
     {
       "identity" : "mapbox-common-ios",
@@ -20,15 +20,6 @@
       }
     },
     {
-      "identity" : "mapbox-directions-swift",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/mapbox/mapbox-directions-swift.git",
-      "state" : {
-        "revision" : "6512320ee7f0091a4c55abe2bc6414f078da88c8",
-        "version" : "2.14.0"
-      }
-    },
-    {
       "identity" : "mapbox-maps-ios",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mapbox/mapbox-maps-ios.git",
@@ -38,21 +29,39 @@
       }
     },
     {
-      "identity" : "polyline",
+      "identity" : "mapbox-navigation-ios",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/raphaelmor/Polyline.git",
+      "location" : "https://github.com/mapbox/mapbox-navigation-ios.git",
       "state" : {
-        "revision" : "353f80378dcd8f17eefe8550090c6b1ae3c9da23",
-        "version" : "5.1.0"
+        "revision" : "0e78d8505acec26c17b96171dd1f7e7a97ca6cce",
+        "version" : "3.2.0"
       }
     },
     {
-      "identity" : "swift-argument-parser",
+      "identity" : "mapbox-navigation-native-ios",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-argument-parser",
+      "location" : "https://github.com/mapbox/mapbox-navigation-native-ios.git",
       "state" : {
-        "revision" : "0fbc8848e389af3bb55c182bc19ca9d5dc2f255b",
-        "version" : "1.4.0"
+        "revision" : "1d6c1186d468f0ad27ba2653a9a49423a5cd5c81",
+        "version" : "314.0.0"
+      }
+    },
+    {
+      "identity" : "mapbox-search-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mapbox/mapbox-search-ios.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "538db98556aed24cd4c55308569873cec3131d69"
+      }
+    },
+    {
+      "identity" : "swift-snapshot-testing",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-snapshot-testing.git",
+      "state" : {
+        "revision" : "26ed3a2b4a2df47917ca9b790a57f91285b923fb",
+        "version" : "1.12.0"
       }
     },
     {

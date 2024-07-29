@@ -10,13 +10,14 @@ import MapboxMaps
 
 @main
 struct RecklessApp: App {
+    @ObservedObject var navigation = Navigation()
     
 //    init() {
 //    }
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(navigation: navigation)
         }
     }
 }

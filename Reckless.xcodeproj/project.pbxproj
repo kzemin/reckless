@@ -8,8 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		9F58126A2C4871A2005FE96E /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 9F5812692C4871A2005FE96E /* MapboxMaps */; };
-		9F58126D2C487378005FE96E /* MapboxDirections in Frameworks */ = {isa = PBXBuildFile; productRef = 9F58126C2C487378005FE96E /* MapboxDirections */; };
-		9F58126F2C487378005FE96E /* mapbox-directions-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 9F58126E2C487378005FE96E /* mapbox-directions-swift */; };
+		9F5812722C49FD37005FE96E /* MapboxNavigationCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9F5812712C49FD37005FE96E /* MapboxNavigationCore */; };
+		9F5812742C49FD37005FE96E /* MapboxNavigationUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9F5812732C49FD37005FE96E /* MapboxNavigationUIKit */; };
+		9F5812762C49FD37005FE96E /* _MapboxNavigationTestKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9F5812752C49FD37005FE96E /* _MapboxNavigationTestKit */; };
+		9F5812782C4A0B97005FE96E /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5812772C4A0B97005FE96E /* Navigation.swift */; };
+		9F58127A2C4B2D26005FE96E /* NavigationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5812792C4B2D26005FE96E /* NavigationMapViewController.swift */; };
+		9F58127C2C4C93DB005FE96E /* NavigationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F58127B2C4C93DB005FE96E /* NavigationMapView.swift */; };
+		9F58127F2C4F40FA005FE96E /* MapboxSearch in Frameworks */ = {isa = PBXBuildFile; productRef = 9F58127E2C4F40FA005FE96E /* MapboxSearch */; };
+		9F5812812C4F40FA005FE96E /* MapboxSearchUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9F5812802C4F40FA005FE96E /* MapboxSearchUI */; };
+		9F5812862C4F4412005FE96E /* ContinuousSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5812852C4F4412005FE96E /* ContinuousSearchViewController.swift */; };
+		9F5812882C4F4443005FE96E /* TextViewLoggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5812872C4F4443005FE96E /* TextViewLoggerViewController.swift */; };
+		9F58128A2C4F4675005FE96E /* Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5812892C4F4675005FE96E /* Examples.swift */; };
+		9F58128C2C506D15005FE96E /* SimpleListSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F58128B2C506D15005FE96E /* SimpleListSearchViewController.swift */; };
+		9F58128E2C507747005FE96E /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F58128D2C507747005FE96E /* MapsViewController.swift */; };
+		9F5812902C521606005FE96E /* MapboxMapsCategoryResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F58128F2C521606005FE96E /* MapboxMapsCategoryResultsViewController.swift */; };
+		9F5812922C521639005FE96E /* MapboxBoundingBoxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5812912C521639005FE96E /* MapboxBoundingBoxController.swift */; };
 		9F633D8A2C405B65002411B8 /* RecklessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F633D892C405B65002411B8 /* RecklessApp.swift */; };
 		9F633D8C2C405B65002411B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F633D8B2C405B65002411B8 /* ContentView.swift */; };
 		9F633D8E2C405B66002411B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F633D8D2C405B66002411B8 /* Assets.xcassets */; };
@@ -19,9 +32,20 @@
 		9F7F3F302C42287800187615 /* MapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F3F2F2C42287800187615 /* MapViewRepresentable.swift */; };
 		9F7F3F522C44730700187615 /* scene.gltf in Resources */ = {isa = PBXBuildFile; fileRef = 9F7F3F512C44730700187615 /* scene.gltf */; };
 		9F7F3F542C44737D00187615 /* scene.bin in Resources */ = {isa = PBXBuildFile; fileRef = 9F7F3F532C44737C00187615 /* scene.bin */; };
+		9FD1D4812C573FC300C78FF0 /* NavigationControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1D4802C573FC300C78FF0 /* NavigationControlsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F5812772C4A0B97005FE96E /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		9F5812792C4B2D26005FE96E /* NavigationMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationMapViewController.swift; sourceTree = "<group>"; };
+		9F58127B2C4C93DB005FE96E /* NavigationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationMapView.swift; sourceTree = "<group>"; };
+		9F5812852C4F4412005FE96E /* ContinuousSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuousSearchViewController.swift; sourceTree = "<group>"; };
+		9F5812872C4F4443005FE96E /* TextViewLoggerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewLoggerViewController.swift; sourceTree = "<group>"; };
+		9F5812892C4F4675005FE96E /* Examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examples.swift; sourceTree = "<group>"; };
+		9F58128B2C506D15005FE96E /* SimpleListSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleListSearchViewController.swift; sourceTree = "<group>"; };
+		9F58128D2C507747005FE96E /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		9F58128F2C521606005FE96E /* MapboxMapsCategoryResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapboxMapsCategoryResultsViewController.swift; sourceTree = "<group>"; };
+		9F5812912C521639005FE96E /* MapboxBoundingBoxController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapboxBoundingBoxController.swift; sourceTree = "<group>"; };
 		9F633D862C405B65002411B8 /* Reckless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reckless.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F633D892C405B65002411B8 /* RecklessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecklessApp.swift; sourceTree = "<group>"; };
 		9F633D8B2C405B65002411B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +57,7 @@
 		9F7F3F2F2C42287800187615 /* MapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewRepresentable.swift; sourceTree = "<group>"; };
 		9F7F3F512C44730700187615 /* scene.gltf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scene.gltf; sourceTree = "<group>"; };
 		9F7F3F532C44737C00187615 /* scene.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = scene.bin; sourceTree = "<group>"; };
+		9FD1D4802C573FC300C78FF0 /* NavigationControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControlsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,9 +65,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F58127F2C4F40FA005FE96E /* MapboxSearch in Frameworks */,
+				9F5812812C4F40FA005FE96E /* MapboxSearchUI in Frameworks */,
+				9F5812742C49FD37005FE96E /* MapboxNavigationUIKit in Frameworks */,
+				9F5812722C49FD37005FE96E /* MapboxNavigationCore in Frameworks */,
+				9F5812762C49FD37005FE96E /* _MapboxNavigationTestKit in Frameworks */,
 				9F58126A2C4871A2005FE96E /* MapboxMaps in Frameworks */,
-				9F58126D2C487378005FE96E /* MapboxDirections in Frameworks */,
-				9F58126F2C487378005FE96E /* mapbox-directions-swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +82,41 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F5812822C4F43B5005FE96E /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				9F5812772C4A0B97005FE96E /* Navigation.swift */,
+				9FD1D4802C573FC300C78FF0 /* NavigationControlsView.swift */,
+				9F58127B2C4C93DB005FE96E /* NavigationMapView.swift */,
+				9F5812792C4B2D26005FE96E /* NavigationMapViewController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		9F5812832C4F43C3005FE96E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				9F5812852C4F4412005FE96E /* ContinuousSearchViewController.swift */,
+				9F5812892C4F4675005FE96E /* Examples.swift */,
+				9F5812872C4F4443005FE96E /* TextViewLoggerViewController.swift */,
+				9F58128F2C521606005FE96E /* MapboxMapsCategoryResultsViewController.swift */,
+				9F58128B2C506D15005FE96E /* SimpleListSearchViewController.swift */,
+				9F5812912C521639005FE96E /* MapboxBoundingBoxController.swift */,
+				9F58128D2C507747005FE96E /* MapsViewController.swift */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		9F5812842C4F43DA005FE96E /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				9F7F3F2B2C41757B00187615 /* LocationManager.swift */,
+				9F7F3F2D2C4224BF00187615 /* MapViewController.swift */,
+				9F7F3F2F2C42287800187615 /* MapViewRepresentable.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 		9F633D7D2C405B65002411B8 = {
@@ -79,9 +142,9 @@
 				9F633D972C416265002411B8 /* Info.plist */,
 				9F633D892C405B65002411B8 /* RecklessApp.swift */,
 				9F633D8B2C405B65002411B8 /* ContentView.swift */,
-				9F7F3F2B2C41757B00187615 /* LocationManager.swift */,
-				9F7F3F2D2C4224BF00187615 /* MapViewController.swift */,
-				9F7F3F2F2C42287800187615 /* MapViewRepresentable.swift */,
+				9F5812842C4F43DA005FE96E /* Location */,
+				9F5812832C4F43C3005FE96E /* Search */,
+				9F5812822C4F43B5005FE96E /* Navigation */,
 				9F633D8D2C405B66002411B8 /* Assets.xcassets */,
 				9F7F3F532C44737C00187615 /* scene.bin */,
 				9F7F3F512C44730700187615 /* scene.gltf */,
@@ -116,8 +179,11 @@
 			name = Reckless;
 			packageProductDependencies = (
 				9F5812692C4871A2005FE96E /* MapboxMaps */,
-				9F58126C2C487378005FE96E /* MapboxDirections */,
-				9F58126E2C487378005FE96E /* mapbox-directions-swift */,
+				9F5812712C49FD37005FE96E /* MapboxNavigationCore */,
+				9F5812732C49FD37005FE96E /* MapboxNavigationUIKit */,
+				9F5812752C49FD37005FE96E /* _MapboxNavigationTestKit */,
+				9F58127E2C4F40FA005FE96E /* MapboxSearch */,
+				9F5812802C4F40FA005FE96E /* MapboxSearchUI */,
 			);
 			productName = Reckless;
 			productReference = 9F633D862C405B65002411B8 /* Reckless.app */;
@@ -149,7 +215,8 @@
 			mainGroup = 9F633D7D2C405B65002411B8;
 			packageReferences = (
 				9F5812682C4871A2005FE96E /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
-				9F58126B2C487378005FE96E /* XCRemoteSwiftPackageReference "mapbox-directions-swift" */,
+				9F5812702C49FD37005FE96E /* XCRemoteSwiftPackageReference "mapbox-navigation-ios" */,
+				9F58127D2C4F40FA005FE96E /* XCRemoteSwiftPackageReference "mapbox-search-ios" */,
 			);
 			productRefGroup = 9F633D872C405B65002411B8 /* Products */;
 			projectDirPath = "";
@@ -179,10 +246,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F58128E2C507747005FE96E /* MapsViewController.swift in Sources */,
+				9F5812902C521606005FE96E /* MapboxMapsCategoryResultsViewController.swift in Sources */,
+				9F58127A2C4B2D26005FE96E /* NavigationMapViewController.swift in Sources */,
 				9F7F3F302C42287800187615 /* MapViewRepresentable.swift in Sources */,
 				9F633D8C2C405B65002411B8 /* ContentView.swift in Sources */,
+				9F58127C2C4C93DB005FE96E /* NavigationMapView.swift in Sources */,
+				9FD1D4812C573FC300C78FF0 /* NavigationControlsView.swift in Sources */,
+				9F5812922C521639005FE96E /* MapboxBoundingBoxController.swift in Sources */,
 				9F633D8A2C405B65002411B8 /* RecklessApp.swift in Sources */,
+				9F5812782C4A0B97005FE96E /* Navigation.swift in Sources */,
+				9F58128C2C506D15005FE96E /* SimpleListSearchViewController.swift in Sources */,
+				9F5812862C4F4412005FE96E /* ContinuousSearchViewController.swift in Sources */,
+				9F58128A2C4F4675005FE96E /* Examples.swift in Sources */,
 				9F7F3F2C2C41757B00187615 /* LocationManager.swift in Sources */,
+				9F5812882C4F4443005FE96E /* TextViewLoggerViewController.swift in Sources */,
 				9F7F3F2E2C4224BF00187615 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,12 +497,20 @@
 				version = 11.5.1;
 			};
 		};
-		9F58126B2C487378005FE96E /* XCRemoteSwiftPackageReference "mapbox-directions-swift" */ = {
+		9F5812702C49FD37005FE96E /* XCRemoteSwiftPackageReference "mapbox-navigation-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mapbox/mapbox-directions-swift.git";
+			repositoryURL = "https://github.com/mapbox/mapbox-navigation-ios.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.14.0;
+				minimumVersion = 3.2.0;
+			};
+		};
+		9F58127D2C4F40FA005FE96E /* XCRemoteSwiftPackageReference "mapbox-search-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-search-ios.git";
+			requirement = {
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -435,15 +521,30 @@
 			package = 9F5812682C4871A2005FE96E /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
 			productName = MapboxMaps;
 		};
-		9F58126C2C487378005FE96E /* MapboxDirections */ = {
+		9F5812712C49FD37005FE96E /* MapboxNavigationCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9F58126B2C487378005FE96E /* XCRemoteSwiftPackageReference "mapbox-directions-swift" */;
-			productName = MapboxDirections;
+			package = 9F5812702C49FD37005FE96E /* XCRemoteSwiftPackageReference "mapbox-navigation-ios" */;
+			productName = MapboxNavigationCore;
 		};
-		9F58126E2C487378005FE96E /* mapbox-directions-swift */ = {
+		9F5812732C49FD37005FE96E /* MapboxNavigationUIKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9F58126B2C487378005FE96E /* XCRemoteSwiftPackageReference "mapbox-directions-swift" */;
-			productName = "mapbox-directions-swift";
+			package = 9F5812702C49FD37005FE96E /* XCRemoteSwiftPackageReference "mapbox-navigation-ios" */;
+			productName = MapboxNavigationUIKit;
+		};
+		9F5812752C49FD37005FE96E /* _MapboxNavigationTestKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F5812702C49FD37005FE96E /* XCRemoteSwiftPackageReference "mapbox-navigation-ios" */;
+			productName = _MapboxNavigationTestKit;
+		};
+		9F58127E2C4F40FA005FE96E /* MapboxSearch */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F58127D2C4F40FA005FE96E /* XCRemoteSwiftPackageReference "mapbox-search-ios" */;
+			productName = MapboxSearch;
+		};
+		9F5812802C4F40FA005FE96E /* MapboxSearchUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F58127D2C4F40FA005FE96E /* XCRemoteSwiftPackageReference "mapbox-search-ios" */;
+			productName = MapboxSearchUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
