@@ -12,9 +12,6 @@ import MapboxMaps
 struct RecklessApp: App {
     @ObservedObject var navigation = Navigation()
     
-//    init() {
-//    }
-    
     var body: some Scene {
         WindowGroup {
             ContentView(navigation: navigation)

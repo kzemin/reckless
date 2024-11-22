@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-@_spi(Experimental) import MapboxMaps
+import MapboxMaps
 import CoreLocation
 
 struct MapViewCoordinatorKey: PreferenceKey {
@@ -27,8 +27,9 @@ struct ContentView: View {
         ZStack {
             VStack {
                 MapViewRepresentable(centerOnUserLocation: {
-                    mapViewCoordinator?.centerOnUserLocation()
-                })
+                    map
+//                    mapViewCoordinator?.centerOnUserLocation()
+                }, navigation: navigation)
                 .edgesIgnoringSafeArea(.all)
                 
                 HStack {

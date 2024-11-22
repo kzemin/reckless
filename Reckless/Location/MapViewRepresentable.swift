@@ -10,9 +10,10 @@ import SwiftUI
 
 struct MapViewRepresentable: UIViewControllerRepresentable {
     let centerOnUserLocation: () -> Void
+    let navigation: Navigation
     
     func makeUIViewController(context: Context) -> MapViewController {
-        let controller = MapViewController()
+        let controller = MapViewController(navigation: navigation)
         context.coordinator.mapViewController = controller
         DispatchQueue.main.async {
             context.coordinator.parent.setCoordinator(context.coordinator)
@@ -34,9 +35,10 @@ struct MapViewRepresentable: UIViewControllerRepresentable {
             self.parent = parent
         }
         
-        @MainActor func centerOnUserLocation() {
-            mapViewController?.centerAndFollowUser()
-        }
+//        @MainActor func centerOnUserLocation() {
+//            guard let userLocation = navigation.
+//            mapViewController?.centerAndFollowUser()
+//        }
     }
     
     func setCoordinator(_ coordinator: Coordinator) {

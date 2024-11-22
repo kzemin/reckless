@@ -8,7 +8,7 @@
 import UIKit
 import CoreLocation
 @_spi(Experimental) import MapboxMaps
-import MapboxSearch
+//import MapboxSearch
 import MapboxDirections
 import MapboxNavigationCore
 import MapboxNavigationUIKit
@@ -25,7 +25,7 @@ final class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let options = MapInitOptions()
+//        let options = MapInitOptions()
         
         mapView.frame = view.bounds
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -133,30 +133,30 @@ final class MapViewController: UIViewController {
 //        }
 //    }
     
-    func cameraToAnnotations(_ annotations: [PointAnnotation]) {
-        if annotations.count == 1, let annotation = annotations.first {
-            mapView.camera.fly(
-                to: .init(center: annotation.point.coordinates, zoom: 15),
-                duration: 0.25,
-                completion: nil
-            )
-        } else {
-            do {
-                let cameraState = mapView.mapboxMap.cameraState
-                let coordinatesCamera = try mapView.mapboxMap.camera(
-                    for: annotations.map(\.point.coordinates),
-                    camera: CameraOptions(cameraState: cameraState),
-                    coordinatesPadding: UIEdgeInsets(top: 24, left: 24, bottom: 24, right: 24),
-                    maxZoom: nil,
-                    offset: nil
-                )
-                
-                mapView.camera.fly(to: coordinatesCamera, duration: 0.25, completion: nil)
-            } catch {
-                _Logger.searchSDK.error(error.localizedDescription)
-            }
-        }
-    }
+//    func cameraToAnnotations(_ annotations: [PointAnnotation]) {
+//        if annotations.count == 1, let annotation = annotations.first {
+//            mapView.camera.fly(
+//                to: .init(center: annotation.point.coordinates, zoom: 15),
+//                duration: 0.25,
+//                completion: nil
+//            )
+//        } else {
+//            do {
+//                let cameraState = mapView.mapboxMap.cameraState
+//                let coordinatesCamera = try mapView.mapboxMap.camera(
+//                    for: annotations.map(\.point.coordinates),
+//                    camera: CameraOptions(cameraState: cameraState),
+//                    coordinatesPadding: UIEdgeInsets(top: 24, left: 24, bottom: 24, right: 24),
+//                    maxZoom: nil,
+//                    offset: nil
+//                )
+//                
+//                mapView.camera.fly(to: coordinatesCamera, duration: 0.25, completion: nil)
+//            } catch {
+//                _Logger.searchSDK.error(error.localizedDescription)
+//            }
+//        }
+//    }
     
 //    func showAnnotation(_ result: SearchResult) {
 //        showAnnotations(results: [result])
@@ -168,12 +168,12 @@ final class MapViewController: UIViewController {
 //        cameraToAnnotations(annotationsManager.annotations)
 //    }
     
-    func showError(_ error: Error) {
-        let alertController = UIAlertController(title: nil, message: error.localizedDescription, preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        
-        present(alertController, animated: true, completion: nil)
-    }
+//    func showError(_ error: Error) {
+//        let alertController = UIAlertController(title: nil, message: error.localizedDescription, preferredStyle: .alert)
+//        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//        
+//        present(alertController, animated: true, completion: nil)
+//    }
 }
     
 //    func getDirections(from start: CLLocationCoordinate2D, to end: CLLocationCoordinate2D) {
